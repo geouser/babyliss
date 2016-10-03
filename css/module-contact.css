@@ -1,0 +1,288 @@
+﻿cookie.horizontal .actions {
+  text-align: center;
+}
+.cookie .btn,
+.cookie.vertical .btn {
+  display: inline-block;
+}
+.cookie .btn,
+.cookie.vertical .btn {
+  cursor: pointer;
+}
+.cookie.cookie-dialog.cookie-dialog-modal {
+  z-index: 20;
+}
+.cookie,
+.cookie .actions,
+.cookie .disclaimer,
+.cookie.vertical,
+.cookie.vertical .actions,
+.cookie.vertical .disclaimer {
+  float: left;
+  padding:5px 20px;
+}
+.cookie .actions,
+.cookie.horizontal,
+.cookie.horizontal .disclaimer,
+.cookie.vertical,
+.cookie.vertical .actions,
+.cookie.vertical .disclaimer {
+  margin: 0;
+}
+.cookie .actions,
+.cookie.horizontal,
+.cookie.horizontal .disclaimer,
+.cookie.vertical,
+.cookie.vertical .actions,
+.cookie.vertical .disclaimer {
+  width: 100%;
+}
+.cookie:after,
+.cookie.vertical:after,
+.cookie:before,
+.cookie.vertical:before {
+  clear: both;
+  content: '';
+  display: table;
+}
+@media (min-width: 768px) {
+  .cookie.vertical {
+    margin: 0;
+  }
+  .cookie.vertical {
+    width: 33.333333333333336%;
+  }
+}
+@media (min-width: 1280px) {
+  .cookie.cookie-dialog,
+  .cookie.horizontal .actions,
+  .cookie.horizontal .disclaimer {
+    margin: 0;
+  }
+  .cookie.cookie-dialog {
+    width: 33.333333333333336%;
+  }
+  .cookie.horizontal .actions {
+    width: 41.66666666666667%;
+  }
+  .cookie.horizontal .disclaimer {
+    width: 58.333333333333336%;
+  }
+  .cookie.cookie-dialog {
+    margin-left: 33.333333333333336%;
+  }
+  .cookie.cookie-dialog {
+    margin-right: 33.333333333333336%;
+  }
+  .cookie.vertical .btn {
+    text-align: center;
+  }
+  .cookie.horizontal .actions {
+    text-align: left;
+  }
+  .cookie.vertical .btn {
+    display: block;
+  }
+}
+@media (min-width: 1600px) {
+  .cookie.vertical {
+    margin: 0;
+  }
+  .cookie.vertical {
+    width: 16.666666666666668%;
+  }
+}
+.cookie,
+.cookie.vertical {
+  font-size: 15px;
+  position: fixed;
+  -webkit-transition: 0.2s ease-out opacity, 0.2s ease-out -webkit-transform;
+          transition: 0.2s ease-out opacity, 0.2s ease-out transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 9999999;
+}
+.cookie *,
+.cookie.vertical *,
+.cookie *:after,
+.cookie.vertical *:after,
+.cookie *:before,
+.cookie.vertical *:before {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+.cookie .btn,
+.cookie.vertical .btn {
+  -webkit-transition: 0.2s ease-out;
+          transition: 0.2s ease-out;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.cookie .btn,
+.cookie.vertical .btn {
+  vertical-align: middle;
+}
+.cookie .btn,
+.cookie.vertical .btn {
+  padding:3px 8px;
+}
+.cookie.collapse {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+.cookie.cookie-dialog {
+  border-radius: 3px/5px;
+  box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.3);
+  top: 25%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+.cookie.cookie-dialog.collapse {
+  -webkit-transform: translateY(50%) scale(0);
+          transform: translateY(50%) scale(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.cookie.cookie-dialog.cookie-dialog-modal ~ .cookie-dialog-modal {
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transition: 0.2s ease-out 0.2s opacity, 0s ease-out 0.4s top;
+          transition: 0.2s ease-out 0.2s opacity, 0s ease-out 0.4s top;
+  width: 100%;
+}
+.cookie.cookie-dialog.cookie-dialog-modal.collapse ~ .cookie-dialog-modal {
+  opacity: 0;
+  top: -100%;
+}
+.cookie.horizontal.bottom {
+  bottom: 0;
+}
+.cookie.horizontal .disclaimer {
+  font-size: 0.9em;
+}
+.cookie.horizontal.top {
+  top: 0;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+.showControlBar .cookie.horizontal.top,
+.showControlBar + .cookie.horizontal.top {
+  top: 53px;
+}
+.cookie.vertical {
+  height: 100%;
+  top: 0;
+}
+.cookie.vertical.left {
+  left: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+.cookie.vertical.right {
+  right: 0;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+/*
+  css themes. 
+*/
+/* theme dark */
+.cookie.theme-dark {
+  background-color: #636363;
+  background-color:rgba(99,99,99,0.8);
+  color: #fff;
+}
+.cookie.theme-dark .btn,
+.cookie.theme-dark .btn:hover {
+  border-radius: 3px;
+  color: #fff;
+}
+.cookie.theme-dark .safe {
+  background-color: #636363;
+  color: #fff;
+  border:none;
+}
+.cookie.theme-dark .safe:hover {
+  background-color: #000000;
+  color: #fff;
+}
+/* theme grass */
+.cookie.theme-grass {
+  background-color: #99cc72;
+  color: #242424;
+}
+.cookie.theme-grass .btn,
+.cookie.theme-grass .btn:hover {
+  border-radius: 3px;
+  color: #242424;
+}
+.cookie.theme-grass .safe {
+  background-color: #2faf4a;
+  color: #fff;
+  border: solid 1px #289b4b;
+}
+.cookie.theme-grass .safe:hover {
+  background-color: #176835;
+  color: #fff;
+}
+/* theme ocean */
+.cookie.theme-ocean {
+  background-color: #57c1ee;
+  color: #fff;
+}
+.cookie.theme-ocean .btn,
+.cookie.theme-ocean .btn:hover {
+  border-radius: 3px;
+  color: #fff;
+}
+.cookie.theme-ocean .safe {
+  background-color: #0277bd;
+  color: #fff;
+}
+.cookie.theme-ocean .safe:hover {
+  background-color: #02577f;
+  color: #fff;
+}
+/* theme wine */
+.cookie.theme-wine {
+  background-color: #f1686c;
+  color: #fff;
+}
+.cookie.theme-wine .btn,
+.cookie.theme-wine .btn:hover {
+  border-radius: 3px;
+  color: #fff;
+}
+.cookie.theme-wine .safe {
+  border: solid 1px #af162a;
+  background-color: #b7202c;
+  color: #fff;
+}
+.cookie.theme-wine .safe:hover {
+  background-color: #9b1c2b;
+}
+/* theme solarized */
+.cookie.theme-solarized {
+  background-color: #e4e4e4;
+  color: #424242;
+}
+.cookie.theme-solarized .btn,
+.cookie.theme-solarized .btn:hover {
+  border-radius: 3px;
+  color: #424242;
+}
+.cookie.theme-solarized .safe {
+  background-color: #3591e0;
+  color: #fff;
+}
+.cookie.theme-solarized .safe:hover {
+  background-color: #147fdc;
+}

@@ -1,0 +1,24 @@
+﻿/* Site Navigation */
+
+#PetiteNav {
+    display: inline-block;
+    margin:0;
+    line-height:0.7em;
+}
+
+#PetiteNav li {
+    list-style: none;
+    margin: 0;
+    float:left;
+    padding:0 2px;
+    white-space:nowrap;
+}
+#PetiteNav li:before{
+	content:" | ";
+}
+#PetiteNav li:first-child:before{
+	content:"";
+}
+
+
+ 

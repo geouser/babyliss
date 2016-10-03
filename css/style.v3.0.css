@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GLOBAL */
+body{
+	font-family:AvantGarde, sans-serif;
+	margin:0;
+	background-color:#dadada;
+}
+a {color:#000000;}
+a:hover{color:#FF0000;}
+div.spacer {clear: both;}
+
+/* HEADER */
+.head_main{
+	background-color:#FFF;	
+	height:85px;
+}
+.header{
+	width:1096px;
+	margin:0 auto;
+}
+.logo{
+	float:left;
+	padding-left:24px;
+}
+.langue{float: right;}
+select {
+	font-family:AvantGarde, sans-serif;
+	font-size:16px;
+	margin:6px 24px 0 0;
+}
+.menu {
+    background:#636363;
+	height:34px;
+	color:white;
+	text-align:center;
+	padding-left:24px;
+}
+.centrageMenu{
+	width:1096px;
+	text-align:left;
+	margin:0 auto;
+}
+.centrageMenu a {
+	background-color: #636363;
+	font-size: 14px;
+	display:inline-block;
+	padding: 9px 9px ;
+	height:16px;
+	float : left;
+	color: white;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+.centrageMenu a:hover {	
+	background-color: #888888;
+}
+#mobileNavBt {
+	display:none;
+}
+#mobileNav {
+	display:none;	
+}
+#mobileNav ul {
+    list-style: none;
+    background: #1c1c1c;
+    padding: 5px 0;
+}
+#mobileNav li {
+    padding: 0 20px;
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+	font-size:2em;
+    line-height: 4em;
+    height: 4em;
+}
+#mobileNav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #383838;
+    letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
+}
+ 
+#mobileNav li:last-child a {
+    border-bottom: none;
+}
+ 
+#mobileNav li a:hover,
+#mobileNav li a:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+/* MAIN */
+.main{
+	width:1096px;
+	margin:0 auto;
+}
+.player{
+	width:816px;
+	height:460px;
+	float:left;
+	margin:24px 24px 24px 24px;
+}
+.title{
+	background-color:#383838;
+	text-align:center;
+	font-size:20px;
+	text-transform:uppercase;
+	color:white;
+	float:right;
+	width:208px;
+	height:218px;
+	margin:24px 24px 24px 0px;
+}
+.titleTab{
+	width:208px;
+	height:218px;
+}
+.download{
+	text-align:center;
+	background-color:grey;
+	color:white;
+	float:right;
+	width:208px;
+	height:130px;
+	margin:0px 24px 24px 0px;
+	padding-top:88px;
+}
+.download a{
+	text-decoration:none;
+	font-size:24px;
+	color:white;
+	text-transform:uppercase;
+}
+.miniature{
+	width:100%;
+	height:auto;
+}
+.miniatContainer {
+	float:left;
+	position:relative;
+	margin:0px 0px 24px 24px;
+	padding:0px;
+	border:none;
+	width:256px;
+	height:144px;
+	float:left;
+}
+.miniatCaption {
+    position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+    font-weight:normal;
+    font-size:18px;
+    overflow:hidden;
+	color:#FFF;
+    background:none repeat scroll 0% 0% rgba(0, 0, 0, 0.67);
+	text-align:center;
+	visibility:visible;
+}
+.fleche{
+	float:left;
+	width:208px;
+	height:144px;
+	margin:0px 0px 24px 24px;
+	border:none;
+	text-align:center;
+	background-color:#383838;
+}
+
+.social{
+	margin:0 0 0 24px;
+	font-size:14px;
+}
+
+.footer{
+	font-size: 12px;
+	text-align: center;
+	margin-top:35px;
+}
+
+/* INFO-BULLE */
+/* Masquage de l'info-bulle */
+a.info_bulle span {
+    position: absolute;
+    font-weight: normal;
+    font-size: 18px;
+    overflow: hidden;
+	visibility: hidden;
+	color:#FFF;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.67);
+	text-align:center;
+}
+a.info_bulle:hover {
+  border:0;  /* Correction du bug d'IE6 et inférieur */
+}
+/* Affichage de l'info-bulle */
+a.info_bulle:hover span, a.info_bulle:focus span, a.info_bulle:active span {
+	visibility:visible;
+}
+
+@media screen and (max-width: 1096px)
+{
+	.head_main{
+		height:auto;
+	}
+	.header{
+		width:100%;
+		margin:0;
+	}
+	.menu {
+		display:none;
+	}
+	#mobileNav {
+		display:block;
+	}
+	#mobileNavBt {
+		display:block;
+		float:right;
+		margin:20px;
+	}
+	.langue{
+		height:100px;
+	}
+	select {
+		font-size:44px;
+		margin:20px;
+	}
+	.main{
+		width:100%;
+		margin:0;
+	}
+	.player{
+		float:none;
+		width:auto !important;
+		height:auto !important;
+		margin:0;
+	}
+	.videoplayer{
+		width:96% !important;
+		margin:2%;
+		height:auto !important;
+	}
+	.title{
+		width:64%;
+		margin:0 2%;
+		float:left;
+	}
+	.titleTab{
+		width:100%;
+	}
+	.download{
+		width:30%;
+		margin:0 2% 0 0;
+		height:138px;
+		padding-top:80px;
+	}
+	.miniatContainer{
+		margin:2% 0 0 2%;
+		width:30.666666666666666666666666666666666666666666666666%;
+		height:auto;
+	}
+	.fleche{
+		width:96%;
+		margin:2%;
+	}
+}

@@ -1,0 +1,76 @@
+﻿.dnnHTMLSettings, .dnnMyWork, .dnnEditHtml{margin:2em auto;}
+	.dnnFormItem input[type=checkbox], .dnnPageSettings .dnnFormItem input[type=radio]{width:auto;}
+	.dnnFormItem .dnnHTMLSRadioButtons label, .dnnFormItem .dnnPSRadioButtons input, .dnnFormItem .dnnHTMLSRadioButtons label, .dnnFormItem .dnnHTMLSRadioButtons input{float:left;padding:0;width:2%;text-align:left;}
+	.dnnFormItem .dnnHTMLSRadioButtons label{width:auto;padding:0 15px 0 6px;font-weight:normal}
+	.dnnHTMLSRadioButtons br{display:none !important;font-size:0;line-height:0;border-collapse:collapse;}
+/* ================================
+    CSS STYLES FOR Module DNN.UserDefinedTable
+   ================================
+*/
+
+
+
+.UDT_UponSubmit
+{
+	margin-top :1em;
+}
+.UDT_Caption
+{
+	display:block;
+}
+
+.fnlSettingsWarning {
+    margin: 4% 0 0 32%;
+    padding: 0;
+}
+
+.dnnFormItem span.CommandButton {
+    clear: both;
+    display: block;
+    margin-left: 32%;
+    overflow: hidden;
+}
+.dnnForm .dnnFormItem .dnnFormLabelWithoutHelp label span {
+    line-height: 1.4;
+    padding-right: 1.8em;
+    display: block;
+    position: relative; 
+} 
+.dnnForm .dnnFormItem .dnnFormLabelWithoutHelp
+{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+#dnnFormAndListConfig .Sortable .Draggable
+{
+	cursor: move;
+}
+
+
+.dnnFormAndList .dnnGridHeader th{
+    font-size: 100%;
+     white-space: nowrap;
+}
+
+
+.fnlForm
+{
+margin: 1em auto 1em;
+}
+/*
+#ssPageSettings .dnnTextEditor
+{
+    margin-left: 32%;
+}*/
+
+.pushRight {
+    margin-left: 32%;
+}
+.dnnForm input.dnnFormRequired{
+    border-left: 5px red solid!important;
+    padding-right: -5px!important;
+}
+.dnnFormItem textarea.dnn2rows {
+    min-height: 1em;
+}
