@@ -69,6 +69,12 @@
     </script>
     <script src="js/bootstrap.min.js" type="text/javascript">
     </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <link href="css/petit.css" rel="stylesheet" type="text/css">
 </head>
@@ -193,11 +199,89 @@
     </div>
     <div class="fond-bas home">
         <div class="wrapper">
-            <div class="HomeContentPane" id="dnn_contentPane">
+            <div class="HomeContentPane main-page-slider" id="dnn_contentPane">
 
-                <!-- Slider must go here -->
+                <div class="full-slider">
+                    <img src="images/1.jpg" alt="">
+                    <img src="images/2.jpg" alt="">
+                    <img src="images/3.jpg" alt="">
+                    <img src="images/4.jpg" alt="">
+                    <img src="images/5.jpg" alt="">
+                </div>
+
+                <div class="small-slider">
+                    <img src="images/11.jpg" alt="">
+                    <img src="images/22.jpg" alt="">
+                    <img src="images/33.jpg" alt="">
+                    <img src="images/44.jpg" alt="">
+                    <img src="images/55.jpg" alt="">
+                </div>
 
             </div>
+            <script>
+                $(document).ready(function(){
+                    $('.full-slider').slick({
+                        arrows: true,
+                        asNavFor: '.small-slider'
+                    })
+
+                    $('.small-slider').slick({
+                        arrows: false,
+                        asNavFor: '.full-slider',
+                        vertical: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        verticalSwiping: true,
+                        focusOnSelect: true
+                    });
+
+                    $(window).resize(function(){
+                        $('.small-slider').slick('setPosition');
+                    })
+                })
+            </script>
+            <style>
+                .main-page-slider {
+                    position: relative;
+                }
+                .small-slider {
+                    width: 80px;
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    height: 280px;
+                }
+                .small-slider .slick-slide {
+                    margin: 5px 0;
+                    border: 1px solid #fff;
+                }
+                .small-slider .slick-slide.slick-current {
+                    border: 1px solid #000;
+                }
+                .full-slider .slick-arrow.slick-prev {
+                    left: 120px;
+                    z-index: 5;
+                }
+                .full-slider .slick-arrow.slick-next {
+                    right: 20px;
+                    z-index: 5;
+                }
+
+
+                @media (max-width: 950px) {
+                    .small-slider {
+                        display: none;
+                    }
+                    .full-slider .slick-arrow.slick-prev {
+                        left: 20px;
+                    }
+                }
+
+            </style>
 
             <div class="row quart">
                 <div class="row demimini">
